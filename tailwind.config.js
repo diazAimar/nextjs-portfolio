@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         HKGroteskBold: "'HKGrotesk-Bold'",
+        NokiaFC22: "'NokiaFC22'",
       },
     },
   },
