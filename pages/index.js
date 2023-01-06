@@ -1,14 +1,15 @@
 import Head from 'next/head';
+import Menu from '../components/home/Menu';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
-        <title>FDA Portfolio</title>
+        <title>My Portfolio</title>
         <meta name="description" content="My portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Mi Portfolio</h1>
-    </div>
+      <Menu />
+    </>
   );
 }
