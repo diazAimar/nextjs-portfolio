@@ -7,6 +7,11 @@
   src: url('../fonts/HKGrotesk-Bold.otf');
 }
 
+@font-face {
+  font-family: 'NokiaFC22';
+  src: url('../fonts/nokiafc22.ttf');
+}
+
 html,
 body {
   padding: 0;
