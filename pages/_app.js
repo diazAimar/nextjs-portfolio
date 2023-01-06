@@ -1,10 +1,13 @@
-import { CacheProvider } from '@emotion/react';
 import '../styles/globals.css';
-import createEmotionCache from '../config/createEmotionCache';
-import { AnimatePresence } from 'framer-motion';
-import { Box } from '@mui/material';
-import Navbar from '../components/home/Navbar';
+
 import Layout from '../components/shared/Layout';
+
+import { Box } from '@mui/material';
+
+import createEmotionCache from '../config/createEmotionCache';
+import { CacheProvider } from '@emotion/react';
+
+import { AnimatePresence } from 'framer-motion';
 
 const clientSideEmotionCache = createEmotionCache();
 
