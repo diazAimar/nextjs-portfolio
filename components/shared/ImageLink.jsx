@@ -10,7 +10,9 @@ export default function ImageLink({ href, target, ext, sqr }) {
   return (
     <Link
       href={href}
-      className={sqr ? `w-[110px] h-[100px]` : `w-[250px] h-[100px]`}
+      className={
+        'h-80px sm:h-[100px]' + (sqr ? ` w-[88px] sm:w-[110px] ` : ` w-[200px] sm:w-[250px]`)
+      }
       target={ext ? '_blank' : '_self'}
     >
       <ConditionalTooltipWrapper
