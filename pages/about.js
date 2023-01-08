@@ -1,11 +1,30 @@
+import Head from 'next/head';
+import Link from 'next/link';
+
+import AboutMe from '../components/about/AboutMe';
+import Skills from '../components/about/Skills';
+import Education from '../components/about/Education';
+
 import { Box, Typography } from '@mui/material';
-import Tooltip from 'rc-tooltip';
-import 'rc-tooltip/assets/bootstrap_white.css';
+
+import { skills, education } from '../generalInfo';
 
 export default function About() {
   return (
-    <Box>
-      <Typography className="font-NokiaFC22">About</Typography>
-    </Box>
+    <>
+      <Head>
+        <title>About</title>
+        <meta name="description" content="My portfolio" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Link href="/" className="border-b-2">
+        Go Home
+      </Link>
+      <Box className="mt-5" /* style={{ overflow: 'overlay' }} */>
+        <AboutMe />
+        <Skills skills={skills} />
+        <Education education={education} />
+      </Box>
+    </>
   );
 }
