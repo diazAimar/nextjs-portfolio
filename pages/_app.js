@@ -13,7 +13,8 @@ const clientSideEmotionCache = createEmotionCache();
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'NokiaFC22',
+    fontFamily: 'Abadon',
+    fontSize: 18,
   },
 });
 
