@@ -12,9 +12,21 @@
   src: url('../fonts/nokiafc22.ttf');
 }
 
+@font-face {
+  font-family: 'VCR';
+  src: url('../fonts/VCR.ttf');
+}
+
+@font-face {
+  font-family: 'Abadon';
+  src: url('../fonts/Abaddon-Bold.ttf');
+}
+
 html,
 body {
   color: #f2f2f2;
+  font-family: 'Abadon' !important;
+  /* font-weight: bolder; */
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

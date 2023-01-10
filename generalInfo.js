@@ -13,11 +13,6 @@ export const education = [
     name: 'August 2020 - December 2022 | Associate Degree in Web Development (finished)',
   },
   {
-    id: 2,
-    institution: 'Centro Pyme Adeneu - Plan 10mil - PAE - Fundación Pescar y EducacionIT',
-    name: 'July 2021 - December 2021 | Full Stack Programming Course and Soft Skills Course',
-  },
-  {
     id: 3,
     institution: 'Universidad Nacional del Comahue',
     name: 'January 2020 - August 2020 | Computer Science Bachelors Degree (2 subjects approved)',
@@ -29,25 +24,27 @@ export const education = [
   },
 ];
 
+export const languages = [
+  {
+    id: 1,
+    lang: 'Native Spanish',
+  },
+  {
+    id: 2,
+    lang: 'Fluid English',
+  },
+];
+
 export const projects = [
   {
     id: 1,
     name: 'growgrove',
-    college: 1,
-    personal: 1,
     shortDescription:
-      'web application focused on improving the users productivity (inspired by Forest)',
+      'Web application focused on improving the users productivity (inspired by Forest)',
   },
   {
     id: 2,
     name: 'juntar',
-    college: 1,
-    personal: 0,
-    shortDescription: 'web application created to manage events',
-  },
-  {
-    id: 3,
-    name: 'juntar',
-    shortDescription: 'web application created to manage events related to school (college)',
+    shortDescription: 'Web application created to manage events',
   },
 ];
