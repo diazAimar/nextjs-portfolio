@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         HKGroteskBold: "'HKGrotesk-Bold'",
         NokiaFC22: "'NokiaFC22'",
+        Abadon: "'Abadon'",
       },
     },
   },
