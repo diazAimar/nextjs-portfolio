@@ -21,7 +21,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
           <Tooltip
             placement="bottom"
             trigger={['hover']}
-            overlay={<Typography>{target}</Typography>}
+            overlay={<Typography className="font-NokiaFC22">{target}</Typography>}
           >
             {children}
           </Tooltip>
