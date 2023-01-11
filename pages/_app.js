@@ -14,7 +14,6 @@ const clientSideEmotionCache = createEmotionCache();
 const theme = createTheme({
   typography: {
     fontFamily: 'Abadon',
-    fontSize: 18,
   },
 });
 
