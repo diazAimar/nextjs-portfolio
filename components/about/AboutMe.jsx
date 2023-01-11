@@ -3,7 +3,9 @@ import { Box, Divider, Typography } from '@mui/material';
 export default function AboutMe() {
   return (
     <Box className="my-5" style={{ overflow: 'overlay' }}>
-      <Typography className="text-[1.2rem] mb-5 border-b-2"> Introduction</Typography>
+      <Typography variant="h2" className="mb-5 text-[1.4rem] border-b-2">
+        Introduction
+      </Typography>
       <Typography className="mb-5">
         Hi! My name is Federico. I&apos;m a web developer based in Argentina.
       </Typography>

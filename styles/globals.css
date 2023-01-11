@@ -26,6 +26,8 @@ html,
 body {
   color: #f2f2f2;
   font-family: 'Abadon' !important;
+  letter-spacing: 0.08rem;
+  font-size: 1.2rem;
   /* font-weight: bolder; */
   padding: 0;
   margin: 0;
@@ -40,14 +42,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

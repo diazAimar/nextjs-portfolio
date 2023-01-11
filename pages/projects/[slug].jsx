@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 export default function Project() {
   const router = useRouter();
   const fileName = router.query.slug;
+  let formattedName = '';
   const [project, setProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -21,21 +22,26 @@ export default function Project() {
     fetchProjectMd();
   }, [fileName, router.query.slug, router.isReady]);
 
+  if (!router.isReady) return;
+
+  formattedName = fileName.replace(/-/g, ' ');
+  formattedName = formattedName.charAt(0).toUpperCase() + formattedName.slice(1);
+
   return (
     <>
       <Link href="/" className="border-b-2">
         Go Home
       </Link>
-      <Box className="mt-5 flex gap-2">
+      <Box className="mt-5 flex items-center gap-2">
         <Link href="/projects" className="border-b-2">
           Projects
         </Link>
-        <Typography> &gt; {fileName}</Typography>
+        <Typography> &gt; {formattedName}</Typography>
       </Box>
       {isLoading ? (
         <Typography>Loading...</Typography>
       ) : (
-        <Box className="mt-5">
+        <Box className="mt-5 text-[1rem]">
           {project !== null ? <Markdown>{project.default}</Markdown> : null}
         </Box>
       )}

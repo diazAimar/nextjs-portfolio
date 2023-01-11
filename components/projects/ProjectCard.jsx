@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ProjectCard({ project }) {
   return (
-    <Box className="mb-5">
+    <Box className="mb-8">
       <Link href={`/projects/${project.name}`}>
         <Image
           src={`/projects-images/${project.name}/${project.name}-thumbnail.png`}
@@ -13,13 +13,15 @@ export default function ProjectCard({ project }) {
           alt={project.name}
         ></Image>
       </Link>
-      <Box className="text-center">
-        <Box className="flex items-center justify-center gap-2">
+      <Box className="text-left">
+        <Box className="flex items-center justify-start gap-2">
           <Link href={`/projects/${project.name}`}>
-            <Typography className="border-b-2 inline-block my-2">{project.name}</Typography>
+            <Typography className="text-[1.2rem] border-b-2 inline-block my-2">
+              {project.name}
+            </Typography>
           </Link>
         </Box>
-        <Typography className="text-[0.8rem]">{project.shortDescription}</Typography>
+        <Typography>{project.shortDescription}</Typography>
       </Box>
     </Box>
   );

@@ -40,11 +40,26 @@ export const projects = [
     id: 1,
     name: 'growgrove',
     shortDescription:
-      'Web application focused on improving the users productivity (inspired by Forest)',
+      'Web application focused on improving the users productivity (inspired by Forest).',
   },
   {
     id: 2,
     name: 'juntar',
-    shortDescription: 'Web application created to manage events',
+    shortDescription: 'Web application created to manage events.',
+  },
+];
+
+export const otherProjects = [
+  {
+    id: 1,
+    name: 'ecommerce',
+    slug: 'ecommerce',
+    shortDescription: 'Fullstack vanilla PHP e-commerce',
+  },
+  {
+    id: 2,
+    name: 'Youtube Freestyle Captions',
+    slug: 'youtube-freestyle-captions',
+    shortDescription: 'App that creates subtitles for youtube captions to freestyle to',
   },
 ];
