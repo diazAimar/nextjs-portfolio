@@ -46,45 +46,5 @@ export default function ImageLink({ href, target, ext, sqr }) {
         </Link>
       </ConditionalTooltipWrapper>
     </Box>
-    /*    <Link
-      href={href}
-      className={
-        ` relative h-80px sm:h-[100px]` +
-        (sqr ? ` w-[88px] sm:w-[110px] ` : ` w-[200px] sm:w-[250px]`)
-      }
-      target={ext ? '_blank' : '_self'}
-    >
-      <ConditionalTooltipWrapper
-        target={target}
-        wrapper={(children) => (
-          <Tooltip
-            placement="bottom"
-            trigger={['hover']}
-            overlay={<Typography className="font-NokiaFC22">{target}</Typography>}
-          >
-            {children}
-          </Tooltip>
-        )}
-      >
-        <video
-          src={`/assets/${target}-button/${target}-button-hover.webm`}
-          className={clickedButtonStyles + ` flex items-end rounded-[15px]`}
-          onMouseOver={(e) => e.currentTarget.play()}
-          onMouseOut={(e) => {
-            e.currentTarget.pause();
-            e.currentTarget.currentTime = 0;
-            // handleMouseUp();
-            // e.currentTarget.src = `/assets/${target}-button/${target}-button-hover.mp4`;
-          }}
-          // onMouseUp={() => handleMouseUp()}
-          // onMouseDown={() => handleMouseClick()}
-          poster=""
-          muted
-          loop
-        >
-          Tu navegador no admite el elemento <code>video</code>.
-        </video>
-      </ConditionalTooltipWrapper>
-    </Link> */
   );
 }
