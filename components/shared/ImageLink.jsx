@@ -1,19 +1,18 @@
-import { Typography } from '@mui/material';
-
 import Link from 'next/link';
 
 import Tooltip from 'rc-tooltip';
 import 'rc-tooltip/assets/bootstrap_white.css';
 import ConditionalTooltipWrapper from '../home/ConditionalTooltipWrapper';
 
+import { Box, Typography } from '@mui/material';
+
 export default function ImageLink({ href, target, ext, sqr }) {
   return (
-    <Link
-      href={href}
+    <Box
       className={
-        'h-80px sm:h-[100px]' + (sqr ? ` w-[88px] sm:w-[110px] ` : ` w-[200px] sm:w-[250px]`)
+        `shadow-[0_10px_0_0_rgba(14,7,27,1)] active:shadow-none active:translate-y-[10px] rounded-[15px] relative` +
+        (sqr ? ` w-[88px] sm:w-[110px] ` : ` w-[200px] sm:w-[250px]`)
       }
-      target={ext ? '_blank' : '_self'}
     >
       <ConditionalTooltipWrapper
         target={target}
@@ -27,25 +26,25 @@ export default function ImageLink({ href, target, ext, sqr }) {
           </Tooltip>
         )}
       >
-        <picture className="h-full flex items-end">
-          <img
-            src={`/assets/${target}-button/${target}-button.png`}
-            onMouseOver={(e) =>
-              (e.currentTarget.src = `/assets/${target}-button/${target}-button-hover.gif`)
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.src = `/assets/${target}-button/${target}-button.png`)
-            }
-            onMouseUp={(e) =>
-              (e.currentTarget.src = `/assets/${target}-button/${target}-button.png`)
-            }
-            onMouseDown={(e) =>
-              (e.currentTarget.src = `/assets/${target}-button/${target}-button-clicked.png`)
-            }
-            alt={target + ' button'}
-          />
-        </picture>
+        <Link href={href} target={ext ? '_blank' : '_self'} className="">
+          <video
+            src={`/assets/${target}-button/${target}-button-hover.webm`}
+            className=""
+            onMouseOver={(e) => {
+              e.currentTarget.play();
+              console.log('as');
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.pause();
+              e.currentTarget.currentTime = 0;
+            }}
+            muted
+            loop
+          >
+            Your browser does not support the <code>video</code> element.
+          </video>
+        </Link>
       </ConditionalTooltipWrapper>
-    </Link>
+    </Box>
   );
 }
