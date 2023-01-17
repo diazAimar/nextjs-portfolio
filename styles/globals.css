@@ -25,10 +25,8 @@
 html,
 body {
   color: #f2f2f2;
-  font-family: 'Abadon' !important;
   letter-spacing: 0.08rem;
   font-size: 1.2rem;
-  /* font-weight: bolder; */
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
