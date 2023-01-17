@@ -10,7 +10,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
   return (
     <Box
       className={
-        `shadow-[0_10px_0_0_rgba(14,7,27,1)] active:shadow-none active:translate-y-[10px] rounded-[15px] relative` +
+        `shadow-[0_8px_0_0_rgba(14,7,27,1)] active:shadow-none active:translate-y-[8px] rounded-[15px] relative` +
         (sqr ? ` w-[88px] sm:w-[110px] ` : ` w-[200px] sm:w-[250px]`)
       }
     >

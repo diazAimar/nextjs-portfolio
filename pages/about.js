@@ -17,8 +17,8 @@ export default function About() {
         <meta name="description" content="My portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href="/" className="border-b-2">
-        Go Home
+      <Link href="/">
+        <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>
       <Box className="mt-5" /* style={{ overflow: 'overlay' }} */>
         <AboutMe />
