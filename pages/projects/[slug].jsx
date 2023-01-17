@@ -1,9 +1,11 @@
-import { Box, Typography } from '@mui/material';
-import Markdown from 'markdown-to-jsx';
-
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+
+import { Box, Typography } from '@mui/material';
+import { defaultTheme } from '../../styles/defaultTheme';
+
+import Markdown from 'markdown-to-jsx';
 
 export default function Project() {
   const router = useRouter();
@@ -11,6 +13,10 @@ export default function Project() {
   let formattedName = '';
   const [project, setProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+
+  const markdownStyles = {
+    fontFamily: defaultTheme.typography.fontFamily,
+  };
 
   useEffect(() => {
     if (!router.isReady) return;
@@ -29,19 +35,19 @@ export default function Project() {
 
   return (
     <>
-      <Link href="/" className="border-b-2">
-        Go Home
+      <Link href="/">
+        <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>
-      <Box className="mt-5 flex items-center gap-2">
-        <Link href="/projects" className="border-b-2">
-          Projects
+      <Box className="mt-5 flex items-baseline gap-2">
+        <Link href="/projects">
+          <Typography className="border-b-2 inline">Projects</Typography>
         </Link>
         <Typography> &gt; {formattedName}</Typography>
       </Box>
       {isLoading ? (
         <Typography>Loading...</Typography>
       ) : (
-        <Box className="mt-5 text-[1rem]">
+        <Box className="mt-5 text-[1rem]" style={markdownStyles}>
           {project !== null ? <Markdown>{project.default}</Markdown> : null}
         </Box>
       )}

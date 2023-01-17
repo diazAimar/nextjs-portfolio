@@ -10,8 +10,8 @@ import { projects, otherProjects } from '../../generalInfo';
 export default function Projects() {
   return (
     <Box>
-      <Link href="/" className="border-b-2">
-        Go Home
+      <Link href="/">
+        <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>
       <Box>
         <Typography className="text-[1.4rem] mb-5 border-b-2 mt-5">Projects</Typography>
