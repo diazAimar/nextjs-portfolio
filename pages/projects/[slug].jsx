@@ -3,9 +3,12 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 import { Box, Typography } from '@mui/material';
-import { defaultTheme } from '../../styles/defaultTheme';
+import { theme1, theme2 } from '../../styles/themes';
 
 import Markdown from 'markdown-to-jsx';
+
+import { useAtom } from 'jotai';
+import { selectedTheme } from '../_app';
 
 export default function Project() {
   const router = useRouter();
@@ -14,8 +17,12 @@ export default function Project() {
   const [project, setProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
+  const [selectedThemeValue, setSelectedThemeValue] = useAtom(selectedTheme);
+
   const markdownStyles = {
-    fontFamily: defaultTheme.typography.fontFamily,
+    fontFamily: selectedThemeValue.typography.allVariants.fontFamily,
+    letterSpacing: selectedThemeValue.typography.allVariants.letterSpacing,
+    fontSize: selectedThemeValue.typography.allVariants.fontSize,
   };
 
   useEffect(() => {
@@ -47,7 +54,7 @@ export default function Project() {
       {isLoading ? (
         <Typography>Loading...</Typography>
       ) : (
-        <Box className="mt-5 text-[1rem]" style={markdownStyles}>
+        <Box className="mt-5 text-[1.1rem]" style={markdownStyles}>
           {project !== null ? <Markdown>{project.default}</Markdown> : null}
         </Box>
       )}
