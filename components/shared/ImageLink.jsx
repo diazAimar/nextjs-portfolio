@@ -20,29 +20,24 @@ export default function ImageLink({ href, target, ext, sqr }) {
           <Tooltip
             placement="bottom"
             trigger={['hover']}
-            overlay={<Typography className="font-NokiaFC22">{target}</Typography>}
+            overlay={<Typography>{target}</Typography>}
           >
             {children}
           </Tooltip>
         )}
       >
-        <Link href={href} target={ext ? '_blank' : '_self'} className="">
-          <video
-            src={`/assets/${target}-button/${target}-button-hover.webm`}
-            className=""
-            onMouseOver={(e) => {
-              e.currentTarget.play();
-              console.log('as');
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.pause();
-              e.currentTarget.currentTime = 0;
-            }}
-            muted
-            loop
-          >
-            Your browser does not support the <code>video</code> element.
-          </video>
+        <Link href={href} target={ext ? '_blank' : '_self'}>
+          <Box className="flex items-center justify-center">
+            <Box className="box z-20" />
+            <picture>
+              <img alt={target} src={sqr ? `/assets/${target}-button.png` : `/assets/button.png`} />
+            </picture>
+            {!sqr ? (
+              <Typography className="text-[1.5rem] sm:text-[2.5rem] capitalize absolute">
+                {target}
+              </Typography>
+            ) : null}
+          </Box>
         </Link>
       </ConditionalTooltipWrapper>
     </Box>
