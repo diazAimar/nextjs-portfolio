@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
 
 import { useAtom } from 'jotai';
@@ -13,12 +13,28 @@ export default function ChangeTheme() {
   };
 
   return (
-    <Box className="cursor-pointer absolute top-[27px] right-[54px] " onClick={handleThemeChange}>
+    <Box className="flex items-baseline absolute top-[20px] right-[54px] text-[1.2rem] ">
       <button
+        onClick={handleThemeChange}
+        disabled={selectedThemeValue === theme1}
+        variant="contained"
         component={'span'}
         className={
-          (selectedThemeValue === theme1 ? ' disabled border-b-2 ' : ' opacity-50 ') +
-          ' font-Abadon flex items-baseline capitalize text-white text-[1.6rem] '
+          (selectedThemeValue === theme1 ? ' opacity-100 cursor-not-allowed ' : ' opacity-50 ') +
+          ' font-Abadon capitalize  '
+        }
+      >
+        Aa
+      </button>
+      <Typography className="cursor-context-menu mx-2">↔</Typography>
+      <button
+        onClick={handleThemeChange}
+        disabled={selectedThemeValue === theme2}
+        variant="contained"
+        component={'span'}
+        className={
+          (selectedThemeValue === theme2 ? '  opacity-100 cursor-not-allowed ' : ' opacity-50 ') +
+          ' font-sans capitalize  '
         }
       >
         Aa
