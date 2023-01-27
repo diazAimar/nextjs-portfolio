@@ -13,27 +13,27 @@ export default function ChangeTheme() {
   };
 
   return (
-    <Box className="flex items-baseline absolute top-[20px] right-[54px] text-[1.2rem] ">
+    <Box className="flex items-baseline absolute top-[18px] right-[54px] text-[1.2rem] ">
       <button
         onClick={handleThemeChange}
         disabled={selectedThemeValue === theme1}
         variant="contained"
         component={'span'}
         className={
-          (selectedThemeValue === theme1 ? ' opacity-100 cursor-not-allowed ' : ' opacity-50 ') +
+          (selectedThemeValue === theme1 ? ' opacity-100 ' : ' opacity-50 ') +
           ' font-Abadon capitalize  '
         }
       >
         Aa
       </button>
-      <Typography className="cursor-context-menu mx-2">↔</Typography>
+      <Typography className="mx-2">↔</Typography>
       <button
         onClick={handleThemeChange}
         disabled={selectedThemeValue === theme2}
         variant="contained"
         component={'span'}
         className={
-          (selectedThemeValue === theme2 ? '  opacity-100 cursor-not-allowed ' : ' opacity-50 ') +
+          (selectedThemeValue === theme2 ? '  opacity-100 ' : ' opacity-50 ') +
           ' font-sans capitalize  '
         }
       >
