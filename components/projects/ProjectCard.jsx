@@ -1,28 +1,29 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ProjectCard({ project }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <Box className="mb-8">
-      <Link href={`/projects/${project.name}`}>
+    <Box
+      className={
+        'w-full sm:w-[49%] mb-2 transition-all scale-95' + (!isHovered ? '' : 'scale-100 ')
+      }
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Link href={`/projects/${project.slug}`}>
         <Image
-          src={`/projects-images/${project.name}/${project.name}-thumbnail.png`}
-          width={512}
-          height={512}
-          alt={project.name}
-        ></Image>
+          src={`/projects-images/${project.slug}/${project.slug}-thumbnail.jpg`}
+          alt={`${project.name}`}
+          className="rounded-xl object-contain w-full"
+          width={720}
+          height={400}
+        />
+        <Typography className="text-xl font-medium my-2">{project.name}</Typography>
+        <Typography className="text-base">{project.shortDescription}</Typography>
       </Link>
-      <Box className="text-left">
-        <Box className="flex items-center justify-start gap-2">
-          <Link href={`/projects/${project.name}`}>
-            <Typography className="text-[1.2rem] border-b-2 inline-block my-2">
-              {project.name}
-            </Typography>
-          </Link>
-        </Box>
-        <Typography>{project.shortDescription}</Typography>
-      </Box>
     </Box>
   );
 }
