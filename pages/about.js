@@ -1,6 +1,6 @@
-import Head from 'next/head';
 import Link from 'next/link';
 
+import Seo from '../components/shared/Seo';
 import AboutMe from '../components/about/AboutMe';
 import Skills from '../components/about/Skills';
 import Education from '../components/about/Education';
@@ -12,11 +12,11 @@ import { skills, education } from '../generalInfo';
 export default function About() {
   return (
     <>
-      <Head>
-        <title>About</title>
-        <meta name="description" content="My portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo
+        title="Diaz Aimar | About"
+        description="Personal information about me. Skills, education, contact, stack, etc."
+        keywords="web developer, react, nextjs, javascript, portfolio, Argentina, about, stack, skills, education, contact"
+      />
       <Link href="/">
         <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>

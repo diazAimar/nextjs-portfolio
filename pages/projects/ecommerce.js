@@ -6,10 +6,16 @@ import { Box, List, ListItem, Typography } from '@mui/material';
 import ecommerceThumbnail from '../../public/projects-images/ecommerce/ecommerce-thumbnail.jpg';
 
 import Meta from '../../components/shared/Meta';
+import Seo from '../../components/shared/Seo';
 
 export default function Ecommerce() {
   return (
     <Box>
+      <Seo
+        title="Diaz Aimar | Ecommerce"
+        description="Information about a vanilla php ecommerce."
+        keywords="ecommerce, vanilla php, project"
+      />
       <Link href="/">
         <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>

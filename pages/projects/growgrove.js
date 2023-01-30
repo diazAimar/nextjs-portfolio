@@ -6,10 +6,17 @@ import { Box, List, ListItem, Typography } from '@mui/material';
 import growgroveThumbnail from '../../public/projects-images/growgrove/growgrove-thumbnail.jpg';
 
 import Meta from '../../components/shared/Meta';
+import Seo from '../../components/shared/Seo';
 
 export default function Growgrove() {
   return (
     <Box>
+      <Seo
+        title="Diaz Aimar | growgrove"
+        description="growgrove is a web application focused on improving the users' productivity, habits,
+        and focus. Todo lists, calendar, and more! "
+        keywords="growgrove, timer, timer block, land, grow land, to do list, calendar, productivity app"
+      />
       <Link href="/">
         <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>
