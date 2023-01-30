@@ -6,10 +6,16 @@ import ProjectShort from '../../components/projects/ProjectShort';
 import { Box, Typography } from '@mui/material';
 
 import { projects, otherProjects } from '../../generalInfo';
+import Seo from '../../components/shared/Seo';
 
 export default function Projects() {
   return (
     <Box>
+      <Seo
+        title="Diaz Aimar | Projects"
+        description="Some of my best projects."
+        keywords="web developer, react, nextjs, javascript, portfolio, Argentina, about, stack, skills, education, contact"
+      />
       <Link href="/">
         <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>

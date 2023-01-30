@@ -6,10 +6,17 @@ import { Box, List, ListItem, Typography } from '@mui/material';
 import youtubeFreestyleCaptionsThumbnail from '../../public/projects-images/youtube-freestyle-captions/youtube-freestyle-captions-thumbnail.png';
 
 import Meta from '../../components/shared/Meta';
+import Seo from '../../components/shared/Seo';
 
 export default function YoutubeFreestyleCaptions() {
   return (
     <Box>
+      <Seo
+        title="Diaz Aimar | YoutubeFreestyleCaptions"
+        description="Information about a desktop application (with a web version) that creates youtube subtitles to add to beats so
+        people can freestyle to them."
+        keywords="freestyle, caption generator, youtube subtitles, beats"
+      />
       <Link href="/">
         <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>

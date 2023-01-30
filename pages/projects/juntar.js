@@ -6,10 +6,16 @@ import { Box, List, ListItem, Typography } from '@mui/material';
 import juntarThumbnail from '../../public/projects-images/juntar/juntar-thumbnail.jpg';
 
 import Meta from '../../components/shared/Meta';
+import Seo from '../../components/shared/Seo';
 
 export default function Juntar() {
   return (
     <Box>
+      <Seo
+        title="Diaz Aimar | Juntar"
+        description="Information about an application to create and manage events related to the Universidad Nacional del Comahue."
+        keywords="juntar, event manager, project"
+      />
       <Link href="/">
         <Typography className="border-b-2 inline">Go Home</Typography>
       </Link>
