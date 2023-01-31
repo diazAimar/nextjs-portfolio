@@ -59,7 +59,7 @@ export const projects = [
     id: 4,
     name: 'Youtube Freestyle Captions',
     slug: 'youtube-freestyle-captions',
-    shortDescription: 'App that creates subtitles for youtube captions to freestyle to',
+    shortDescription: 'Application that creates subtitles for youtube videos of beats to freestyle',
   },
 ];
 
