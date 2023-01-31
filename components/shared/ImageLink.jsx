@@ -7,6 +7,7 @@ import ConditionalTooltipWrapper from '../home/ConditionalTooltipWrapper';
 import { Box, Typography } from '@mui/material';
 
 export default function ImageLink({ href, target, ext, sqr }) {
+  const targetLowercase = target.toLowerCase();
   return (
     <Box
       className={
@@ -28,7 +29,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
       >
         <Link href={href} target={ext ? '_blank' : '_self'}>
           <video
-            src={`/assets/${target}-button-hover.webm`}
+            src={`/assets/${targetLowercase}-button-hover.webm`}
             onMouseOver={(e) => {
               e.currentTarget.play();
             }}
