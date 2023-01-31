@@ -11,13 +11,8 @@ export default function Menu() {
         Hi! Welcome to my portfolio
       </Typography>
       <Grid className="flex flex-col gap-4">
-        <ImageLink href="http://localhost:3000/about" target="about" ext={false} sqr={false} />
-        <ImageLink
-          href="http://localhost:3000/projects"
-          target="projects"
-          ext={false}
-          sqr={false}
-        />
+        <ImageLink href="/about" target="about" ext={false} sqr={false} />
+        <ImageLink href="/projects" target="projects" ext={false} sqr={false} />
         <Box className=" flex items-center justify-between">
           <ImageLink href="https://github.com/diazAimar" target="GitHub" ext={true} sqr={true} />
           <ImageLink
