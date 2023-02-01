@@ -17,9 +17,14 @@ export default function ImageLink({ href, target, ext, sqr }) {
         `relative active:translate-y-[8px] ` +
         (sqr ? `w-[100px] sm:w-[110px] ` : ` w-[220px] sm:w-[250px]`)
       }
-      onMouseDown={() => setShowShadow(false)}
+      onPointerDown={() => setShowShadow(false)}
+      onPointerUp={() => setShowShadow(false)}
+      onPointerOut={() => setShowShadow(true)}
+      /*       onMouseDown={() => setShowShadow(false)}
+      onTouchStart={() => setShowShadow(false)}
+      onTouchEnd={() => setShowShadow(true)}
       onMouseUp={() => setShowShadow(true)}
-      onMouseOut={() => setShowShadow(true)}
+      onMouseOut={() => setShowShadow(true)} */
     >
       <Box
         className={
