@@ -18,7 +18,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
         (sqr ? `w-[100px] sm:w-[110px] ` : ` w-[220px] sm:w-[250px]`)
       }
       onPointerDown={() => setShowShadow(false)}
-      onPointerUp={() => setShowShadow(false)}
+      onPointerUp={() => setShowShadow(true)}
       onPointerOut={() => setShowShadow(true)}
       /*       onMouseDown={() => setShowShadow(false)}
       onTouchStart={() => setShowShadow(false)}
