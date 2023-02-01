@@ -1,9 +1,8 @@
 export const skills = [
   { id: 1, name: 'HTML - CSS' },
   { id: 2, name: 'BOOTSTRAP - TAILWIND CSS' },
-  { id: 3, name: 'JAVASCRIPT' },
   { id: 4, name: 'PHP - LARAVEL' },
-  { id: 5, name: 'REACT JS - NEXT JS' },
+  { id: 5, name: 'JS - REACT JS - NEXT JS' },
 ];
 
 export const education = [
