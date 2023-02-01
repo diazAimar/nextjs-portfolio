@@ -5,16 +5,28 @@ import 'rc-tooltip/assets/bootstrap_white.css';
 import ConditionalTooltipWrapper from '../home/ConditionalTooltipWrapper';
 
 import { Box, Typography } from '@mui/material';
+import { useState } from 'react';
 
 export default function ImageLink({ href, target, ext, sqr }) {
   const targetLowercase = target.toLowerCase();
+  const [showShadow, setShowShadow] = useState(true);
+
   return (
     <Box
       className={
-        `shadow-[0_8px_0_0_rgba(14,7,27,1)] active:shadow-none active:translate-y-[8px] rounded-[15px] relative` +
-        (sqr ? ` w-[110px] ` : ` w-[250px]`)
+        `relative active:translate-y-[8px] ` +
+        (sqr ? `w-[100px] sm:w-[110px] ` : ` w-[220px] sm:w-[250px]`)
       }
+      onMouseDown={() => setShowShadow(false)}
+      onMouseUp={() => setShowShadow(true)}
+      onMouseOut={() => setShowShadow(true)}
     >
+      <Box
+        className={
+          ` h-full w-full absolute top-[-2px] ` +
+          (showShadow ? 'shadow-[0_10px_0_0_rgba(14,7,27,1)] rounded-[15px] pb-2' : ' shadow-none')
+        }
+      ></Box>
       <ConditionalTooltipWrapper
         target={target}
         wrapper={(children) => (

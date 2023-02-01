@@ -13,12 +13,7 @@ export const education = [
     name: 'August 2020 - December 2022 | Associate Degree in Web Development (finished)',
   },
   {
-    id: 3,
-    institution: 'Universidad Nacional del Comahue',
-    name: 'January 2020 - August 2020 | Computer Science Bachelors Degree (2 subjects approved)',
-  },
-  {
-    id: 5,
+    id: 2,
     institution: 'Universidad Nacional de Córdoba',
     name: '2016 - 2019 | Computer Science Bachelors Degree (6 subjects approved)',
   },
