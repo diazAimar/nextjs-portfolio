@@ -10,9 +10,9 @@ export default function AboutMe() {
         Hi! My name is Federico. I&apos;m a web developer based in Argentina.
       </Typography>
       <Typography>
-        I am a creative and self-taught person who seeks to specialize in front-end development.
-        Committed and responsible, I look forward to the opportunity to grow and expand my
-        knowledge.
+        I am a creative and curiousity driven person who seeks to specialize in front-end
+        development. Committed and responsible, I look forward to the opportunity to grow and expand
+        my knowledge.
       </Typography>
     </Box>
   );
