@@ -25,12 +25,12 @@ export default function Projects() {
           return <ProjectCard key={project.id} project={project} />;
         })}
       </Box>
-      <Box>
+      {/* <Box>
         <Typography className="text-[1.4rem] mb-5 border-b-2 mt-5">Other Projects</Typography>
         {otherProjects.map((project) => {
           return <ProjectShort key={project.id} project={project} />;
         })}
-      </Box>
+      </Box> */}
     </Box>
   );
 }
