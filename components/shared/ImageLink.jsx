@@ -47,12 +47,13 @@ export default function ImageLink({ href, target, ext, sqr }) {
         <Link href={href} target={ext ? '_blank' : '_self'} title={target}>
           <video
             src={`/assets/${targetLowercase}-button-hover.webm`}
+            preload="auto"
             onMouseOver={(e) => {
               e.currentTarget.play();
             }}
             onMouseOut={(e) => {
+              e.currentTarget.currentTime = '0';
               e.currentTarget.pause();
-              e.currentTarget.currentTime = 0;
             }}
             muted
             loop
