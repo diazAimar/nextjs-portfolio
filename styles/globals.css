@@ -4,42 +4,50 @@
 
 @font-face {
   font-family: 'HKGrotesk-Bold';
+  font-display: swap;
   src: url('../fonts/HKGrotesk-Bold.otf');
 }
 
 @font-face {
   font-family: 'NokiaFC22';
+  font-display: swap;
   src: url('../fonts/nokiafc22.ttf');
 }
 
 @font-face {
   font-family: 'VCR';
+  font-display: swap;
   src: url('../fonts/VCR.ttf');
 }
 
 @font-face {
   font-family: 'Abadon';
+  font-display: swap;
   src: url('../fonts/Abaddon-Bold.ttf');
 }
 
 @font-face {
   font-family: 'NicoClean';
+  font-display: swap;
   src: url('../fonts/NicoClean-Regular.ttf');
   font-size: 16px;
 }
 
 @font-face {
   font-family: 'NicoPaint';
+  font-display: swap;
   src: url('../fonts/NicoPaint-Regular.ttf');
 }
 
 @font-face {
   font-family: 'NicoPups';
+  font-display: swap;
   src: url('../fonts/NicoPups-Regular.ttf');
 }
 
 @font-face {
   font-family: 'NicoBold';
+  font-display: swap;
   src: url('../fonts/NicoBold-Regular.ttf');
 }
 
@@ -65,6 +73,7 @@ a {
 
 .boldie {
   font-family: 'NicoBold';
+  font-display: swap;
   color: #FFCD8F;
   font-size: 1rem;
 }

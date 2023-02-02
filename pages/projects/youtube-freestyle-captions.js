@@ -58,7 +58,12 @@ export default function YoutubeFreestyleCaptions() {
           <Typography variant="span" className="boldie">
             {' '}
             developed for{' '}
-            <Link href="https://www.youtube.com/@TantuBeats" target="_blank" className="border-b-2">
+            <Link
+              href="https://www.youtube.com/@TantuBeats"
+              target="_blank"
+              className="border-b-2"
+              title="Tantu Beats Youtube channel"
+            >
               Tantu Beats
             </Link>
           </Typography>
@@ -83,6 +88,7 @@ export default function YoutubeFreestyleCaptions() {
             href="https://www.youtube.com/watch?v=_nJ0wYBN3t4"
             target="_blank"
             className="border-b-2"
+            title="Youtube video"
           >
             here
           </Link>{' '}

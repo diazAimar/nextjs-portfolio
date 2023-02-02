@@ -13,7 +13,7 @@ export default function FourOhFour() {
           404 - Page Not Found
         </Typography>
         <Typography>Hi! You... shouldn&apos;t be here.</Typography>
-        <Link href="/" className="border-b-2">
+        <Link href="/" className="border-b-2" title="Home">
           <Typography>Go Back Home</Typography>
         </Link>
       </Box>
