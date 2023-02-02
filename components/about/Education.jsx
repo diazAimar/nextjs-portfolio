@@ -1,17 +1,21 @@
 import { Box, Typography } from '@mui/material';
+import Heading from '../shared/Heading';
 
 export default function Education({ education }) {
   return (
     <Box className="my-5">
-      <Typography variant="h2" className="mb-5 text-[1.4rem] border-b-2">
-        Education
-      </Typography>
-      <Box className="flex flex-col">
+      <Heading variant={'h3'}>Education</Heading>
+      <Box className="flex flex-col gap-5">
         {education.map((education, i) => {
           return (
             <Box key={education.id}>
-              <Typography className="text-[.9rem]">{education.institution}</Typography>
-              <Typography>{education.name}</Typography> <br />
+              <Typography className="text-[1.3rem]">{education.institution}</Typography>
+              <Typography className="inline">
+                <Typography variant="span" className="boldie text-[1rem]">
+                  {education.date} {''}
+                </Typography>
+                | {education.name}
+              </Typography>
             </Box>
           );
         })}

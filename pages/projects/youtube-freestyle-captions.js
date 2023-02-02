@@ -7,6 +7,8 @@ import youtubeFreestyleCaptionsThumbnail from '../../public/projects-images/yout
 
 import Meta from '../../components/shared/Meta';
 import Seo from '../../components/shared/Seo';
+import GoHomeLink from '../../components/shared/GoHomeLink';
+import Breadcrumbs from '../../components/shared/Breadcrumbs';
 
 export default function YoutubeFreestyleCaptions() {
   return (
@@ -17,51 +19,57 @@ export default function YoutubeFreestyleCaptions() {
         people can freestyle to them."
         keywords="freestyle, caption generator, youtube subtitles, beats"
       />
-      <Link href="/">
-        <Typography className="border-b-2 inline">Go Home</Typography>
-      </Link>
-      <Box className="my-5 flex items-baseline gap-2">
-        <Link href="/projects">
-          <Typography className="border-b-2 inline">Projects</Typography>
-        </Link>
-        <Typography> &gt; Youtube Freestyle Captions</Typography>
-      </Box>
+      <GoHomeLink />
+      <Breadcrumbs projectName={'Youtube Freestyle Captions'} />
       <Box className="my-5">
         <Typography>
-          Desktop application (with a web version) that creates youtube subtitles to add to beats so
-          people can freestyle to them.
+          Desktop{' '}
+          <Typography variant="span" className="boldie">
+            application{' '}
+          </Typography>{' '}
+          (with a web version){' '}
+          <Typography variant="span" className="boldie">
+            {' '}
+            that creates youtube subtitles to add to beats{' '}
+          </Typography>{' '}
+          so people can freestyle to them.
         </Typography>
       </Box>
       <List className="p-0">
         <ListItem className="p-0 m-1 ">
           <Meta>Project Members</Meta>
-          <Typography className="text-[14px]">1</Typography>
+          <Typography>1</Typography>
         </ListItem>
         <ListItem className="p-0 m-1 ">
           <Meta>Freelance Project</Meta>
         </ListItem>
         <ListItem className="p-0 m-1 ">
           <Meta>Stack</Meta>
-          <Typography className="text-[14px]">
-            Python + TKinter (Desktop) - Javascript (Web)
-          </Typography>
+          <Typography>Python (Desktop) - Javascript (Web)</Typography>
         </ListItem>
       </List>
       <Box className="my-5">
         <Image src={youtubeFreestyleCaptionsThumbnail} alt="App design" className="rounded-md" />
-        <Typography className="text-[12px]">(desktop prototype)</Typography>
+        <Typography className="text-[1.3rem]">(desktop prototype)</Typography>
       </Box>
       <Box className="flex flex-col gap-4">
         <Typography>
-          This application was developed for{' '}
-          <Link href="https://www.youtube.com/@TantuBeats" target="_blank" className="border-b-2">
-            Tantu Beats
-          </Link>
+          This application was{' '}
+          <Typography variant="span" className="boldie">
+            {' '}
+            developed for{' '}
+            <Link href="https://www.youtube.com/@TantuBeats" target="_blank" className="border-b-2">
+              Tantu Beats
+            </Link>
+          </Typography>
           , a music producer and beatmaker from the Netherlands, Europe.
         </Typography>
         <Typography>
-          Tantu approached me asking for a program where he could easily create youtube subtitles
-          for people to freestyle over his beats.
+          Tantu approached me asking for a program where he could{' '}
+          <Typography variant="span" className="boldie">
+            {' '}
+            easily create youtube subtitles for people to freestyle over his beats.{' '}
+          </Typography>
         </Typography>
         <Typography>
           The application creates a .sbv file (type of file used by youtube videos to show
@@ -69,7 +77,7 @@ export default function YoutubeFreestyleCaptions() {
           appear in a mathematically calculated time, depending on the beat&apos;s bpm, start, and
           its total length.
         </Typography>
-        <Typography>
+        <Typography variant="h5">
           See how it works{' '}
           <Link
             href="https://www.youtube.com/watch?v=_nJ0wYBN3t4"

@@ -7,6 +7,8 @@ import juntarThumbnail from '../../public/projects-images/juntar/juntar-thumbnai
 
 import Meta from '../../components/shared/Meta';
 import Seo from '../../components/shared/Seo';
+import GoHomeLink from '../../components/shared/GoHomeLink';
+import Breadcrumbs from '../../components/shared/Breadcrumbs';
 
 export default function Juntar() {
   return (
@@ -16,32 +18,30 @@ export default function Juntar() {
         description="Information about an application to create and manage events related to the Universidad Nacional del Comahue."
         keywords="juntar, event manager, project"
       />
-      <Link href="/">
-        <Typography className="border-b-2 inline">Go Home</Typography>
-      </Link>
-      <Box className="my-5 flex items-baseline gap-2">
-        <Link href="/projects">
-          <Typography className="border-b-2 inline">Projects</Typography>
-        </Link>
-        <Typography> &gt; Juntar</Typography>
-      </Box>
+      <GoHomeLink />
+      <Breadcrumbs projectName={'Juntar'} />
       <Box className="my-5">
         <Typography>
           Juntar is a web application developed at college together with 10 classmates. It&apos;s an
-          application to create and manage events related to the Universidad Nacional del Comahue.
+          application to{' '}
+          <Typography variant="span" className="boldie">
+            {' '}
+            create and manage events{' '}
+          </Typography>{' '}
+          related to the Universidad Nacional del Comahue.
         </Typography>
       </Box>
       <List className="p-0">
         <ListItem className="p-0 m-1 ">
           <Meta>Project Members</Meta>
-          <Typography className="text-[14px]">11</Typography>
+          <Typography>11</Typography>
         </ListItem>
         <ListItem className="p-0 m-1 ">
           <Meta>College Project</Meta>
         </ListItem>
         <ListItem className="p-0 m-1 ">
           <Meta>Stack</Meta>
-          <Typography className="text-[14px]">PHP - Laravel - MySQL - Livewire</Typography>
+          <Typography>PHP - Laravel - MySQL - Livewire</Typography>
         </ListItem>
       </List>
       <Box className="my-5">
@@ -49,11 +49,19 @@ export default function Juntar() {
       </Box>
       <Box className="flex flex-col gap-4">
         <Typography>
-          My role within this project was, almost entirely, related to the front end. Some of the
-          tasks I performed were the creation components, pages, changing styles and fixing some
-          bugs.
+          <Typography variant="span" className="boldie">
+            {' '}
+            My role{' '}
+          </Typography>{' '}
+          within this project{' '}
+          <Typography variant="span" className="boldie">
+            {' '}
+            was, almost entirely, related to the front end.
+          </Typography>{' '}
+          Some of the tasks I performed were the creation components, pages, changing styles and
+          fixing some bugs.
         </Typography>
-        <Typography>
+        <Typography variant="h5">
           Github:{' '}
           <Link className="border-b-2" href="https://github.com/re-juntar/juntar/" target="_blank">
             juntar

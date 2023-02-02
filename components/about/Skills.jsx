@@ -1,15 +1,19 @@
 import { Box, Typography } from '@mui/material';
+import Heading from '../shared/Heading';
 
-export default function Skills({ skills }) {
+export default function Skills() {
   return (
     <Box className="my-5">
-      <Typography variant="h2" className="mb-5 text-[1.4rem] border-b-2">
-        Most Developed Skills
-      </Typography>
+      <Heading variant={'h3'}>Most Developed Skills</Heading>
       <Box className="flex flex-col">
-        {skills.map((skill, i) => {
-          return <Typography key={skill.id}>{skill.name}</Typography>;
-        })}
+        <Typography> HTML - CSS </Typography>
+        <Typography> BOOTSTRAP - TAILWIND CSS </Typography>
+        <Typography> PHP - LARAVEL</Typography>
+        <Typography>
+          <Typography variant="span" className="boldie">
+            JS - REACT JS - NEXT JS
+          </Typography>
+        </Typography>
       </Box>
     </Box>
   );

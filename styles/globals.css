@@ -22,10 +22,36 @@
   src: url('../fonts/Abaddon-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'NicoClean';
+  src: url('../fonts/NicoClean-Regular.ttf');
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'NicoPaint';
+  src: url('../fonts/NicoPaint-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'NicoPups';
+  src: url('../fonts/NicoPups-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'NicoBold';
+  src: url('../fonts/NicoBold-Regular.ttf');
+}
+
+/* 
+#F9E6CF
+#FFCD8F
+#D9A464
+*/
+
 html,
 body {
   color: #f2f2f2;
-
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -37,44 +63,12 @@ a {
   text-decoration: none;
 }
 
-/* a:hover {
-  color: aqua;
-} */
+.boldie {
+  font-family: 'NicoBold';
+  color: #FFCD8F;
+  font-size: 1rem;
+}
 
 * {
   box-sizing: border-box;
-}
-
-.box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 10%;
-  /* box-shadow: 0 5px 10px rgba(0,0,0,0.1) */
-}
-
-
-
-.box:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -120px;
-  width: 40%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  transform: skewX(-15deg);
-  transition: 1s;
-} 
-
-
-.box:hover:before {
-  left: 250px;
-  background: rgba(255, 255, 255, 0.2);
 }

@@ -1,21 +1,22 @@
 export const skills = [
   { id: 1, name: 'HTML - CSS' },
   { id: 2, name: 'BOOTSTRAP - TAILWIND CSS' },
-  { id: 3, name: 'JAVASCRIPT' },
   { id: 4, name: 'PHP - LARAVEL' },
-  { id: 5, name: 'REACT JS - NEXT JS' },
+  { id: 5, name: 'JS - REACT JS - NEXT JS' },
 ];
 
 export const education = [
   {
     id: 1,
     institution: 'Universidad Nacional del Comahue',
-    name: 'August 2020 - December 2022 | Associate Degree in Web Development (finished)',
+    date: 'August 2020 - December 2022',
+    name: 'Associate Degree in Web Development (finished)',
   },
   {
     id: 2,
     institution: 'Universidad Nacional de Córdoba',
-    name: '2016 - 2019 | Computer Science Bachelors Degree (6 subjects approved)',
+    date: '2016 - 2019',
+    name: 'Computer Science Bachelors Degree (6 subjects approved)',
   },
 ];
 

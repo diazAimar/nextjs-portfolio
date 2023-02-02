@@ -21,8 +21,10 @@ export default function ProjectCard({ project }) {
           width={720}
           height={400}
         />
-        <Typography className="text-xl font-medium my-2">{project.name}</Typography>
-        <Typography className="text-base">{project.shortDescription}</Typography>
+        <Typography variant="h4" className="my-2">
+          {project.name}
+        </Typography>
+        <Typography className="">{project.shortDescription}</Typography>
       </Link>
     </Box>
   );
