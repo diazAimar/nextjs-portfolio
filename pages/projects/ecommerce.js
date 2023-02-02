@@ -56,6 +56,7 @@ export default function Ecommerce() {
             className="border-b-2"
             href="https://github.com/diazAimar/TPFinalPWD/tree/master/View"
             target="_blank"
+            title="PHP Ecommerce GitHub"
           >
             PHP Ecommerce
           </Link>

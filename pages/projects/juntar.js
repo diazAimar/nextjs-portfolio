@@ -63,7 +63,12 @@ export default function Juntar() {
         </Typography>
         <Typography variant="h5">
           Github:{' '}
-          <Link className="border-b-2" href="https://github.com/re-juntar/juntar/" target="_blank">
+          <Link
+            className="border-b-2"
+            href="https://github.com/re-juntar/juntar/"
+            target="_blank"
+            title="juntar Github"
+          >
             juntar
           </Link>
         </Typography>
