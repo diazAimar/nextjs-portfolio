@@ -44,7 +44,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
           </Tooltip>
         )}
       >
-        <Link href={href} target={ext ? '_blank' : '_self'}>
+        <Link href={href} target={ext ? '_blank' : '_self'} title={target}>
           <video
             src={`/assets/${targetLowercase}-button-hover.webm`}
             onMouseOver={(e) => {
