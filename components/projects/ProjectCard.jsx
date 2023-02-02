@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link href={`/projects/${project.slug}`}>
+      <Link href={`/projects/${project.slug}`} title={`${project.name} project page`}>
         <Image
           src={`/projects-images/${project.slug}/${project.slug}-thumbnail.jpg`}
           alt={`${project.name}`}
