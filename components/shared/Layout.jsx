@@ -7,7 +7,7 @@ export default function Layout({ children }) {
       maxWidth="sm"
       className="relative bg-[#2c2c2c] px-[25px] sm:px-[54px] py-[24px] bg-opacity-70 h-full overflow-auto"
     >
-      <ChangeTheme />
+      {/* <ChangeTheme /> */}
       {children}
     </Container>
   );
