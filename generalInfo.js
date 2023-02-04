@@ -41,7 +41,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: 'juntar',
+    name: 'Juntar',
     slug: 'juntar',
     shortDescription: 'Web application created to manage events',
   },
