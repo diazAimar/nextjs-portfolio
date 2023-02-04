@@ -33,12 +33,11 @@ export default function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={selectedThemeValue}>
         <AnimatePresence>
-          <Box className="bg-[url('/background-2.webp')] bg-cover h-[100vh] w-full">
+          <Box className="bg-[url('/background-2.webp')] bg-cover ">
             {loading ? (
               <Loader />
             ) : (
               <Layout>
-                {' '}
                 <Component {...pageProps} />
               </Layout>
             )}

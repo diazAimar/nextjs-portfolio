@@ -5,7 +5,7 @@ import { Box, Grid, Typography } from '@mui/material';
 export default function Menu() {
   return (
     /* bg-[url('/assets/menu-background-test.png')] bg-[length:100%_100%] */
-    <Box className="pb-16 w-full h-full flex flex-col items-center justify-center">
+    <Box className="pb-16  w-full h-[90vh] flex flex-col items-center justify-center">
       {/* <Presentation /> */}
       <Typography variant="h1" className="mb-16 text-[1.6rem] sm:text-[2.5rem] text-center">
         Hi! Welcome to my portfolio
