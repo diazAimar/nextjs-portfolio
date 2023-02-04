@@ -22,7 +22,7 @@ export default function Projects() {
       <Box className="mt-5">
         <Heading variant="h3">Projects</Heading>
       </Box>
-      <Box className="flex flex-wrap items-start justify-between text-center gap-2 relative">
+      <Box className="flex flex-wrap items-start justify-between text-left gap-2 relative">
         {projects.map((project) => {
           return <ProjectCard key={project.id} project={project} />;
         })}
