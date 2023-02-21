@@ -47,7 +47,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
         <Link href={href} target={ext ? '_blank' : '_self'} title={target}>
           <video
             src={`/assets/${targetLowercase}-button-hover.webm`}
-            disableRemotePlayback="true"
+            disableRemotePlayback={true}
             onMouseOver={(e) => {
               e.currentTarget.play();
             }}
