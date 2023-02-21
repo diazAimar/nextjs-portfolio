@@ -5,12 +5,10 @@ import { theme1, theme2 } from '../styles/themes';
 
 import Layout from '../components/shared/Layout';
 
-import { Box, ThemeProvider, Typography } from '@mui/material';
+import { Box, ThemeProvider } from '@mui/material';
 
 import createEmotionCache from '../config/createEmotionCache';
 import { CacheProvider } from '@emotion/react';
-
-import { AnimatePresence } from 'framer-motion';
 
 import { atom, useAtom } from 'jotai';
 import Loader from '../components/shared/Loader';
@@ -26,23 +24,21 @@ export default function MyApp(props) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1);
+    }, 500);
   }, []);
 
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={selectedThemeValue}>
-        <AnimatePresence>
-          <Box className="bg-[url('/background-2.webp')] bg-cover ">
-            {loading ? (
-              <Loader />
-            ) : (
-              <Layout>
-                <Component {...pageProps} />
-              </Layout>
-            )}
-          </Box>
-        </AnimatePresence>
+        <Box className="bg-[url('/background-2.webp')] bg-cover ">
+          {loading ? (
+            <Loader />
+          ) : (
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          )}
+        </Box>
       </ThemeProvider>
     </CacheProvider>
   );
