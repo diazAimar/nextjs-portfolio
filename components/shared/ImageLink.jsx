@@ -57,6 +57,7 @@ export default function ImageLink({ href, target, ext, sqr }) {
             }}
             muted
             loop
+            poster={`/assets/${targetLowercase}-button.webp`}
           >
             Your browser does not support the <code>video</code> element. Click here to go to{' '}
             {target}
