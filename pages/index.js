@@ -1,3 +1,4 @@
+"use client";
 import Seo from '../components/shared/Seo';
 import Menu from '../components/home/Menu';
 

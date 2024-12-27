@@ -1,8 +1,18 @@
 export const skills = [
   { id: 1, name: 'HTML - CSS' },
   { id: 2, name: 'BOOTSTRAP - TAILWIND CSS' },
-  { id: 4, name: 'PHP - LARAVEL' },
+  { id: 3, name: 'PHP - LARAVEL' },
+  { id: 4, name: 'SQL' },
   { id: 5, name: 'JS - REACT JS - NEXT JS' },
+];
+
+export const experience = [
+  {
+    id: 1,
+    institution: 'Municipalidad de Neuquén - Secretaría de Modernización',
+    date: 'April 2023 - January 2025',
+    name: 'Worked as a full stack web developer, using ReactJS and PHP/Laravel',
+  },
 ];
 
 export const education = [

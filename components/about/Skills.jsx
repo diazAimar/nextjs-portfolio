@@ -9,9 +9,10 @@ export default function Skills() {
         <Typography> HTML - CSS </Typography>
         <Typography> BOOTSTRAP - TAILWIND CSS </Typography>
         <Typography> PHP - LARAVEL</Typography>
+        <Typography> SQL </Typography>
         <Typography>
           <Typography variant="span" className="boldie">
-            JS - REACT JS - NEXT JS
+            JAVASCRIPT - REACT JS
           </Typography>
         </Typography>
       </Box>
