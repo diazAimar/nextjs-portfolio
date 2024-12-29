@@ -44,6 +44,12 @@ export default function Growgrove() {
           <Typography>NextJS - PostgreSQL - TailwindCSS</Typography>
         </ListItem>
       </List>
+      <Box className='my-5'>
+        <video width="100%" height="240" controls>
+          <source src="/projects-images/growgrove/video.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+        </video>
+      </Box>
       <Box className="my-5">
         <Image src={growgroveThumbnail} alt="Growgrove main app" className="rounded-md" />
       </Box>
